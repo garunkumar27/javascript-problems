@@ -1,4 +1,4 @@
-let x,y,f,s=1;
+let x,y,s=1;
 x=parseInt(prompt("Enter the number"));
 for(i=1;i<=x;i++){
     y=i*s;
