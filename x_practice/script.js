@@ -48,7 +48,7 @@
 //     let num=get.replace(/[^a-zA-Z]/g,""),
 //     alpha=get.replace(/[^0-9]/g,"");
 //     return  num+alpha;
-   
+
 // }
 // let para=prompt("Enter the value"),
 // res=omit(para);
@@ -57,4 +57,56 @@
 // let mail="arun2722000@gmail.com",
 // clear=mail.replace(/[^a-zA-Z]/g,"");
 // document.write(clear);
+
+// Seperate odd amd even numbers
+
+/* document.getElementById("check").addEventListener("click", even);
+function even() {
+    let numb = document.getElementById("numb").value,
+        odd = numb.replace(/[^13579]$/g, "");
+    if (numb == odd) {
+        document.getElementById("result").innerHTML = "The number is Odd";
+    }
+    else {
+        document.getElementById("result").innerHTML = "The Number is Even";
+    }
+} */
+
+// let arr="235781",sum=0,res,sums=0,result,
+// od=arr.replace(/[^13579]/g,"");
+// console.log(od);
+// document.write(od);
+// console.log(od);
+// let eve=arr.replace(/[^24680]/g,"");
+// console.log(eve);
+// document.write(eve);
+// let spl=od.split("");
+// for(i=0;i<spl.length;i++){
+	// spl[i]=parseInt(spl[i]);
+	// res=sum+spl[i];
+	// sum=res;
+// }
+// document.write(sum);
+// console.log(sum);
+// let sp=eve.split("");
+// for(j=0;j<sp.length;j++){
+	// sp[j]=parseInt(sp[j]);
+	// result=sums+sp[j];
+	// sums=result;
+// }
+// document.write(sums);
+// console.log(sums);
+
+//Write a javascript to get humanized number with the correct suffix such as 1st,2nd,3rd 4th:
+let g_num=prompt("Enter the number"),
+odd=g_num.replace(/[^1]/g,"");
+let sp=odd.split("");
+odd_2=g_num.replace(/[^3]$/g,"");
+odd_3=g_num.replace(/[^59]$/g,"");
+even=g_num.replace(/[^02468]$/g,"");
+if(g_num==sp){
+	st=sp.push("st");
+	console.log(st)
+}
+
 
