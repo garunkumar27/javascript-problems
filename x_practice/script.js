@@ -94,11 +94,11 @@ function even() {
 	// result=sums+sp[j];
 	// sums=result;
 // }
-// document.write(sums);
+// docume-+nt.write(sums);
 // console.log(sums);
 
 //Write a javascript to get humanized number with the correct suffix such as 1st,2nd,3rd 4th:
-let g_num=prompt("Enter the number"),
+/* let g_num=prompt("Enter the number"),
 odd=g_num.replace(/[^1]/g,"");
 let sp=odd.split("");
 odd_2=g_num.replace(/[^3]$/g,"");
@@ -107,6 +107,23 @@ even=g_num.replace(/[^02468]$/g,"");
 if(g_num==sp){
 	st=sp.push("st");
 	console.log(st)
-}
+} */
 
-
+// let number=parseInt(prompt("Enter the Value")),
+// remain1=number%10,
+// remain2=number%100;
+// function nremain(){
+// 	if(remain1==1&&remain2!==11){
+// 		document.write(number+"st");
+// 	}
+// 	else if(remain1==2&&remain2!==12){
+// 		document.write(number+"nd");
+// 	}
+// 	else if(remain1==3&&remain2!==13){
+// 		document.write(number+"rd")
+// 	}
+// 	else{
+// 		document.write(number+"th")
+// 	}
+// }
+// nremain();
