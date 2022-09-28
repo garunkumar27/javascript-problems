@@ -127,3 +127,12 @@ if(g_num==sp){
 // 	}
 // }
 // nremain();
+
+let rang=200
+for(i=7;i<rang;i++){
+    if(i%7==0){
+    console.log(i);
+}
+}
+
+
