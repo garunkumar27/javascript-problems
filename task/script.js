@@ -486,23 +486,122 @@ for(i=0;i<arr.length;i++){
 
  */
  
-	 const names=[
-	 {
-		 Name:"Arun",
-		 Ed:"B Tech",
-		 Place:"Sivasailam"
-	 },{
-		 Name:"Kumar",
-		 Ed:"B Tech",
-		 Place:"Sivasailam"
-	 }
-	 ];
-	 let count=0;
+// 	 const names=[
+// 	 {
+// 		 Name:"Arun",
+// 		 Ed:"B Tech",
+// 		 Place:"Sivasailam"
+// 	 },{
+// 		 Name:"Kumar",
+// 		 Ed:"B Tech",
+// 		 Place:"Sivasailam"
+// 	 }
+// 	 ];
+// 	 let count=0;
 	 
-	names.forEach((key)=>{
-		for(x in key){
-			count++;
+// 	names.forEach((key)=>{
+// 		for(x in key){
+// 			count++;
 		
-		}
- });
- console.log(count);
+// 		}
+//  });
+//  console.log(count);
+
+// let range=100,num,array=[],numb,remain1,remain2,number;
+// for(i=0;i<range;i++){
+// 	if(i%7==0){
+// 	num=i;
+// 	array.push(num);
+// }
+// }
+// console.log(array);
+// for(i=0;i<array.length;i++){
+// 	numb=array[i];
+// 	// console.log(numb);
+// 	numb=numb%10;
+// 	remain1=numb;
+// 	console.log(remain1);
+// 	number=numb/10;
+// 	number=parseInt(number)
+// 	remain2=number%10;
+// 	console.log(remain2);
+// }
+// if(remain1<remain2){
+// 	console.log(number);
+
+// }
+
+var result = [];
+var answer = []
+ for(i = 0 ;i < 200;i++){
+	if(i%7){
+		result.push(i)
+	}
+ }
+ for(i = 0;i<result.length;i++){
+	var a =  result[i]%10;
+	var b = Math.floor(result[i]/10);
+	if(b<a){
+		answer.push(result[i])
+	}
+	if(result[i]>100){
+		var c = result[i]-100;
+        var d =  c%10;
+	   var e = Math.floor(c/10);
+	   if(e > d){
+            answer.push(result[i])
+	   }
+	}
+ }
+console.log(answer)
+
+
+
+
+
+
+
+
+
+// let range=200,rem,remain,a=[],b=[],sum,total,tot;
+// for(i=0;i<=range;i++){
+// 	if(i%7==0){
+// 		a.push(i);
+// 	}
+// 	// console.log(a);
+// }
+// for(i=0;i<a.length;i++){
+// 		rem=a[i]%10;
+// 		remain=parseInt(a[i]/10);
+// 		// console.log(rem,remain);
+// 		if(rem>remain){
+// 			console.log(a[i]);
+// 		}
+// 		if(a[i]>100){
+// 			sum=a[i]-100;
+// 			total=sum%10;
+// 			remain=parseInt(sum/10);
+// 			if(remain<total){
+// 				console.log(b.push(a[i]));
+// 			}
+// 		}
+// }
+// console.log(b);
+
+	// rem=i%10;
+		// remain=parseInt(i/10);
+		// console.log(rem,remain);
+		//  if(i>100){
+		// 	i=(i-100);
+		// 	rem=i%10;
+		// 	remain=parseInt(i/10);
+		//  	console.log(rem,remain);
+		
+		//  }
+		
+		// if(rem>=remain){
+		// 	console.log(i);
+		// }
+	
+	
+
