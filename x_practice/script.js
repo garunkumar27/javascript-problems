@@ -14,6 +14,7 @@
 
 // let str=prompt("Enter the Word"),check;
 // check=str.split("");
+// console.log(check);
 // check=check.reverse();
 // check=check.join("");
 // if(str==check){
@@ -128,11 +129,15 @@ if(g_num==sp){
 // }
 // nremain();
 
-let rang=200
+let rang="200",sep,a=[],b;
 for(i=7;i<rang;i++){
     if(i%7==0){
-    console.log(i);
+    // console.log(i);
+    b=a.push(i);
 }
 }
+console.log(a);
+sep=a.split("");
+console.log(sep);
 
 
