@@ -129,15 +129,120 @@ if(g_num==sp){
 // }
 // nremain();
 
-let rang="200",sep,a=[],b;
-for(i=7;i<rang;i++){
-    if(i%7==0){
-    // console.log(i);
-    b=a.push(i);
+//Symbol.iterator
+let a=["a","b","c","d"];
+let b=a[Symbol.iterator]();
+console.log(b.next().value);
+console.log(b.next().value);
+console.log(b.next().value);
+console.log(b.next().value);console.log(b.next().value);
+
+//at
+let cart = ['apple', 'banana', 'pear'];
+console.log(cart.at(-1));
+
+//concat
+let array1 = ['a', 'b', 'c'];
+let array2 = ['d', 'e', 'f'];
+let array3 = array1.concat(array2);
+console.log(array3);
+
+//copyWithin
+let number=[1,2,3,4,5,6],bcopy;
+bcopy=number.copyWithin(0,3,4)
+console.log(bcopy);
+
+//entries
+let ent=[1,2,3,4,5],rie;
+rie=ent.entries(3);
+console.log(rie.next().value);
+
+//every
+let evry=(value) => value<8;
+let ev=[1,2,3,4,5,6],ry;
+ry=ev.every(evry);
+console.log(ry);
+
+//fill
+let fil=[1,2,3,4,5,6],fill;
+fill=fil.fill(0,1,5);
+console.log(fill);
+
+//filter
+let word=["ab","ba","cccc","dddd"];
+
+let result = word.filter(word => word.length > 3);
+
+console.log(result);
+
+//find
+let fi=[1,2,3,12,40,20],find;
+
+find = fi.find(element => element >10);
+console.log(find);
+
+//find index
+let fid=[1,2,3,12,40,20],findi;
+findi=fid.findIndex(element => element == 4);
+console.log(findi);
+
+//find last
+let la=[1,2,3,12,40,20,60],last;
+last=la.findLast(element => element >39);
+console.log(last);
+
+//last index 
+let li=[1,2,10,1,3,1,],lin;
+lin=li.lastIndexOf(1);
+console.log(lin);
+
+//flat
+let fl= [0, 1, 2, [3,[4,8,9],[23,45]]],flat;
+flat=fl.flat(2);
+console.log(flat);
+
+//flatMap
+let arrfl = [1, 2, [3], [4, 5], 6, []],arrflat;
+arrflat= arrfl.flatMap(num => num);
+console.log(arrflat);
+
+//for each
+let fore=[1,2,34],fore2;
+fore2=fore.forEach(element=>console.log(element));
+//console.log(fore2);
+
+//from
+let fr="karthik";
+console.log(Array.from(fr))
+
+//includes
+let pets = ['cat', 'dog', 'bat'];
+console.log(pets.includes('cat'));
+console.log(pets.includes('at'));
+
+//index of
+let ind=[1,2,3,"q",5];
+console.log(ind.indexOf("q"));
+
+//join
+let ele=["R","Karthi","gasun"];
+console.log(ele.join(""));
+
+//keys
+let ke = ["a", "b", "c"],keys;
+keys = ke.keys();
+console.log(keys);
+for (let key of keys) {
+  console.log(key);
 }
-}
-console.log(a);
-sep=a.split("");
-console.log(sep);
+
+//lastindexof
+let lind=[10,10,2,4,10];
+console.log(lind.lastIndexOf(10));
+
+//map
+let map = [1, 4, 9, 16],map1;
+map1 = map.map(x => x * 2);
+console.log(map1);
 
 
