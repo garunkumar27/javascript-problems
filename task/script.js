@@ -1,21 +1,21 @@
 //Review on Condition(if,else-if,nested if,switch case)
 //let oa=10;
 //if(oa>0){
-	//console.log("Positive number");
+//console.log("Positive number");
 //}
 //else if(oa==0){
-	//console.log("Given Number is Zero");
+//console.log("Given Number is Zero");
 //}
 //else{
 //console.log("Negative Number");
 //}
-	
+
 //let ab=10;
 //if(ab>20){
 //	console.log("Number is Greater")
 //	if(ab==20){
 //		console.log("Number is Equal")
-	//}
+//}
 
 //	else{
 //		console.log("Number is Smaller")
@@ -37,7 +37,7 @@
 //Nested if Concept
 //let y=parseInt(prompt("Enter Value"));
 //if(y>=18){
-	
+
 //	if(y<=25){
 //		console.log("Eligible");
 //}
@@ -52,12 +52,12 @@
 // 		color="Red";
 // 		console.log(color);
 // 		break;
-		
+
 // 	case "Blue":
 // 		color="Blue";
 // 		console.log(color);
 // 		break;
-		
+
 // 	case "Green":
 // 		color="Green";
 // 		console.log(color);
@@ -98,11 +98,11 @@
 // DO WHILE
 //let i=0;
 //do{
-	//b=i;
-	//i++;
-	//console.log(b); 
-		
-	
+//b=i;
+//i++;
+//console.log(b); 
+
+
 //}
 //while(i<=10);
 
@@ -167,7 +167,7 @@
 // for(i=0;i<a.length;i++){
 // 	b=a[i]+s;
 // 	s=b;
-	
+
 // }
 // console.log(s);
 
@@ -306,7 +306,7 @@
 //         if(a[i]<a[j]){
 //             number.push(a[j]);
 //         }
-        
+
 //     }
 //     small (number);
 //     number=[];
@@ -342,7 +342,7 @@
 // 	name=document.getElementById("head");
 // 	name.style.color=inpt;
 // }
-  
+
 
 // let a=[2,6,7,9,5];
 // // a.for(let b in a){
@@ -350,7 +350,7 @@
 // // }
 
 // a.forEach((e)=>{
-	
+
 // })
 // console.log(a);
 
@@ -405,14 +405,14 @@
 
 /* document.getElementById("check").addEventListener("click", even);
 function even() {
-    let numb = document.getElementById("numb").value,
-        odd = numb.replace(/[^13579]$/g, "");
-    if (numb == odd) {
-        document.getElementById("result").innerHTML = "The number is Odd";
-    }
-    else {
-        document.getElementById("result").innerHTML = "The Number is Even";
-    }
+	let numb = document.getElementById("numb").value,
+		odd = numb.replace(/[^13579]$/g, "");
+	if (numb == odd) {
+		document.getElementById("result").innerHTML = "The number is Odd";
+	}
+	else {
+		document.getElementById("result").innerHTML = "The Number is Even";
+	}
 } */
 
 // Separating Odd and Even Numbers and Adding them together
@@ -425,17 +425,17 @@ function even() {
 // document.write(eve);
 // let spl=od.split("");
 // for(i=0;i<spl.length;i++){
-	// spl[i]=parseInt(spl[i]);
-	// res=sum+spl[i];
-	// sum=res;
+// spl[i]=parseInt(spl[i]);
+// res=sum+spl[i];
+// sum=res;
 // }
 // document.write(sum);
 // console.log(sum);
 // let sp=eve.split("");
 // for(j=0;j<sp.length;j++){
-	// sp[j]=parseInt(sp[j]);
-	// result=sums+sp[j];
-	// sums=result;
+// sp[j]=parseInt(sp[j]);
+// result=sums+sp[j];
+// sums=result;
 // }
 // document.write(sums);
 // console.log(sums);
@@ -485,7 +485,7 @@ for(i=0;i<arr.length;i++){
 	}
 
  */
- 
+
 // 	 const names=[
 // 	 {
 // 		 Name:"Arun",
@@ -498,40 +498,222 @@ for(i=0;i<arr.length;i++){
 // 	 }
 // 	 ];
 // 	 let count=0;
-	 
+
 // 	names.forEach((key)=>{
 // 		for(x in key){
 // 			count++;
-		
+
 // 		}
 //  });
 //  console.log(count);
 
 // Printing 7 Divisible number in the ascending order of 'a' number
-let range=200,rem,remain,a=[],b=[],sum,total,tot;
-for(i=0;i<=range;i++){
-	if(i%7==0){
-		a.push(i);
-	}
-	// console.log(a);
+// let range=200,rem,remain,a=[],b=[],sum,total,tot;
+// for(i=0;i<=range;i++){
+// 	if(i%7==0){
+// 		a.push(i);
+// 	}
+// 	// console.log(a);
+// }
+// for(i=0;i<a.length;i++){
+// 		rem=a[i]%10;
+// 		remain=parseInt(a[i]/10);
+// 		// console.log(rem,remain);
+// 		if(rem>remain){
+// 			console.log(a[i]);
+// 		}
+// 		if(a[i]>100){
+// 			sum=a[i]-100;
+// 			total=sum%10;
+// 			tot=parseInt(sum/10);
+// 			if(tot<total){
+// 				console.log(a[i]);
+// 			}
+// 		}
+// }
+
+
+
+// let a=[18,25,30,34];
+// b=a.every(checkAdult);
+// function checkAdult(a){
+// 	if(a>18){
+// 		console.log("All the Members are Above 18");
+// 	}
+// 	else{
+// 		console.log("Below 18")
+// 	}
+
+// }
+
+// let arr = [1, 4, 5, 7, 3, 12], b,fd;
+// b =arr.findLast(ele=>ele>2);
+// console.log(b);
+
+//Array Methods
+//Reduce 
+let arr=[1,22,31,40,5],initial=0,val;
+val=arr.reduce((preval,crntval)=>
+preval+crntval,initial);
+console.log(val);
+/* Output:99 */
+
+//Reduce
+let arra=[139,14,25],tot,total,sum;
+total=arra.reduce((tot,sum)=>
+tot-sum);
+console.log(total);
+//Output:100
+
+//Map
+let ar=[2,8,4,9,7],num;
+num=ar.map(x=>x**2);
+console.log(num);
+//Output:[4, 64, 16, 81, 49]
+
+//Map
+let array=[21,22,25,27,30];
+console.log(array.map(calc));
+function calc(array){
+	return array/2;
 }
-for(i=0;i<a.length;i++){
-		rem=a[i]%10;
-		remain=parseInt(a[i]/10);
-		// console.log(rem,remain);
-		if(rem>remain){
-			console.log(a[i]);
-		}
-		if(a[i]>100){
-			sum=a[i]-100;
-			total=sum%10;
-			tot=parseInt(sum/10);
-			if(tot<total){
-				console.log(a[i]);
-			}
-		}
+//Output:[10.5, 11, 12.5, 13.5, 15]
+
+//Filter
+let cal=[15,21,18,26,39],result;
+result=cal.filter(vari=>vari>21);
+console.log(result);
+//Output:[26, 39]
+ 
+//Filter
+let calcu=["arun","kumar","sivasailam","fabevy","job","possible"];
+console.log(calcu.filter(separate));
+function separate(number){
+	return number.length>4;
+}
+//Output:['kumar', 'sivasailam', 'fabevy', 'possible']
+
+//Find
+let value=[1,15,11,10,14];
+console.log(value.find(finds));
+function finds(get){
+return get>10;
+};
+//Output:15
+
+//Find
+let fn=["arun","kumar","sivasailam","fabevytechno","job","possible"],res;
+res=fn.find(data=>data.length>5);
+console.log(res);
+//Output:sivasailam
+
+//every
+let ca=[15,21,18,26,39],results;
+results=ca.every(vars=>vars>21);
+console.log(results);
+//Output:false
+
+//every
+let ev=[22,14,18,19,29,24,27];
+console.log(ev.every(myFun));
+function myFun(ever){
+	return ever<51;
+}
+//Output:true
+
+//ForEach
+let person=["arun","kumar","Siva","Chennai"],each;
+each=person.forEach((file)=>
+console.log(file));
+//Output:
+//arun
+//kumar
+//Siva
+//Chennai
+
+//ForEach
+let digit=[10,20,30,40],digi;
+digi=digit.forEach((para)=>
+console.log(para));
+//Output:
+//10
+//20
+//30
+//40
+
+//String
+let a=[1,2,3,4,5],out;
+out=String(a);
+console.log(out);
+//Output:1,2,3,4,5
+
+//String
+let st=["Hii","This","Is","not","a","Joke"],ok;
+ok=String(st);
+console.log(ok);
+//Output:Hii,This,Is,not,a,Joke
+
+
+//Splice
+let ab=[10,11,12,13,14,16,17];
+ab.splice(5,2,15);
+console.log(ab);
+//Output:[10, 11, 12, 13, 14, 15]
+
+let rev=["a","b","c","e"]
+rev.splice(3,1,"d");
+console.log(rev);
+//Output:['a', 'b', 'c', 'd']
+
+let per={
+	name:"Arun",
+	Age:"22",
+	Place:"Sivasailam"
 }
 
-	
-	
+let abc=Object.keys(per).filter((k)=>{
+	console.log(per[k]);
+	return (per[k.length]>3)
+	});
+console.log(abc);
+//Output:
 
+//flatMap
+let fl = [13, 12, [23], [21,22], 26, [55]],flat;
+flat= fl.flatMap(nums => nums);
+console.log(flat);
+//Output:[13, 12, 23, 21, 22, 26, 55]
+
+//last index 
+let las=[1,5,9,22,12,5,4,8,7,5,1,3,1,5],lst;
+lst=las.lastIndexOf(1);
+console.log(lst);
+//Output:12
+
+//find last
+let la=[1,2,3,12,40,20,60,44,22],last;
+last=la.findLast(element => element >39);
+console.log(last);
+//Output:44
+
+//reduceRight
+let red=[[4,8],[5,8]],redu;
+redu=red.reduceRight((e,w)=>w);
+console.log(redu);
+//Output:[26, 39]
+
+//values
+let vals=["r","v","a"],va;
+va=vals.values();
+for(n of va){
+console.log(n);
+}
+//Output:
+//r
+//v
+//a
+
+//includes
+let fruits=["Apple","mango","Berry","banana","Orange"];
+console.log(fruits.includes("mango"));
+//Output:True
