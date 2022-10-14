@@ -534,29 +534,30 @@ for(i=0;i<arr.length;i++){
 
 
 
-// let a=[18,25,30,34];
-// b=a.every(checkAdult);
-// function checkAdult(a){
-// 	if(a>18){
-// 		console.log("All the Members are Above 18");
-// 	}
-// 	else{
-// 		console.log("Below 18")
-// 	}
+//  let a=[18,25,30,34];
+//  b=a.every(checkAdult);
+//  function checkAdult(a){
+//  	if(a>18){
+//  		console.log("All the Members are Above 18");
+//  	}
+//  	else{
+//  		console.log("Below 18")
+//  	}
 
-// }
+//  }
 
-// let arr = [1, 4, 5, 7, 3, 12], b,fd;
-// b =arr.findLast(ele=>ele>2);
-// console.log(b);
-
+//  let arr = [1, 4, 5, 7, 3, 12], b,fd;
+//  b =arr.findLast(ele=>ele>2);
+//  console.log(b);
+/* 
 //Array Methods
 //Reduce 
 let arr=[1,22,31,40,5],initial=0,val;
 val=arr.reduce((preval,crntval)=>
 preval+crntval,initial);
 console.log(val);
-/* Output:99 */
+//Output:99 
+
 
 //Reduce
 let arra=[139,14,25],tot,total,sum;
@@ -717,3 +718,58 @@ console.log(n);
 let fruits=["Apple","mango","Berry","banana","Orange"];
 console.log(fruits.includes("mango"));
 //Output:True
+ */
+/* 
+//Starting an array containing the numbers 1 to 10 ,use  filter, map,reduce to produce the following.
+//Use console.log to display the results 
+ let arrays=[1,2,3,4,5,6,7,8,9,10];
+ //1.Array of Odd Numbers
+ console.log(arrays.filter(odd))
+ function odd(abc){
+	 return abc%2==1;
+ }
+ //Output:[1, 3, 5, 7, 9]
+ //2.Array of Num Divisible by 2 or 5
+ console.log(arrays.filter(div));
+ function div(bcd){
+	  if(bcd%2==0){
+		  return bcd;
+	  }
+	 else if(bcd%5==0){
+		 return bcd;
+	 }
+ }
+ //Output:[2, 4, 5, 6, 8, 10]
+ //3.An array of numbers divisible by 3 and then square those numbers
+ arrays.filter(three);
+ function three(data){
+	 if(data%3==0){
+		 console.log(data**2);
+	 }
+ }
+ //Output:9,36,81
+ //4.The sum of following :Square the numbers divisible by 5
+ arrays.filter(five);
+ function five(dat){
+	 if(dat%5==0){
+		  console.log(dat**2); 
+		i=0;			
+		dat**2+i;
+		s=i;
+		
+		 console.log(s)
+	 }
+	 
+ }
+ //Output:25,100 */
+ 
+ function createPyramid(rows)
+{
+    for (let i = 0; i < rows; i++) {
+        var output = '';
+        for (let j =0; j < rows - i; j++) output += ' ';
+        for (let k = 0; k <= i; k++) output += '* ';
+        console.log(output);  
+    } 
+}
+createPyramid(8);
