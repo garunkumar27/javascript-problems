@@ -265,7 +265,7 @@
 // Write a program to Check whether a date is a weekend date or not?
 // let date=new Date("09/11/2022"),
 // day=date.getDay(date);
-// console.log(day);
+// console.log(day
 // if(day=="0"||day=="6"){
 // 	console.log("Given Date is weekend");
 // }
@@ -763,7 +763,7 @@ console.log(fruits.includes("mango"));
  }
  //Output:25,100 */
  
- function createPyramid(rows)
+/*  function createPyramid(rows)
 {
     for (let i = 0; i < rows; i++) {
         var output = '';
@@ -772,4 +772,6 @@ console.log(fruits.includes("mango"));
         console.log(output);  
     } 
 }
-createPyramid(8);
+createPyramid(8); */
+
+//Write a JavaScript program to add items in an blank array and display the items.
