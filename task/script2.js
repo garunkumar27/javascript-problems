@@ -7,8 +7,9 @@ function adding(){
     let input=document.getElementById("inpt"),
 	display=document.getElementById("list"),
     inptEle=input.value;
-    let array=[];
-    array.push(inptEle);
+    //let array=[];
+	//array and loop is necessary only when we store value in arrays and later we display it using display button.
+    //array.push(inptEle);
     //console.log(array);
 	for(i=0;i<array.length;i++){
 		let list=document.createElement("li");
@@ -38,26 +39,20 @@ arr=arr.join("");
 console.log(arr); */
 
 //Write a program to find duplicate values in a  array
-/* let array=[1,2,4,5,2,4,1,8,6,9];
+let array=[1,2,4,5,2,4,1,9,8,6,9],count=0,ab;
 for(i=0;i<array.length;i++){
 	for(j=i+1;j<array.length;j++){
 		if(array[i]==array[j]){
-			console.log(array[i]);
+			count++;
+			console.log(count);
+			//console.log(array[i],"," ,count,"times");
+			
+			
 		}
+
 	}
-}  */
-
-
-
-
-
-
-
-
-
-l/* et array=[1,2,4,5,2,4,8,6,9];
-let number=array.filter((a,b)=>{
-	array.indexOf(a)!==b
 	
-})
-console.log(number);  */
+}  
+//console.log(count);
+		
+
