@@ -1,4 +1,4 @@
-// FOR IN- for in used in object give only the key(name,lname)
+j// FOR IN- for in used in object give only the key(name,lname)
 // If FOR OF is used in object it shows an error
  //for(i of a){
  //console.log(i);
@@ -40,9 +40,10 @@ for(x of m){
 //"FOR EACH"
 let v =["1","2","3","4","5"];
 v.forEach((i,e)=>{
-console.log(i,e)
+	console.log(i);
+console.log(i,e);
 })
-//OUTPUT
+//OUTPUT first column-array value,2nd column-index number
 // 1  0
 // 2  1
 // 3  2
