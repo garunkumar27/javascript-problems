@@ -17,5 +17,7 @@ console.log(sum);
 // 1.It check the condition (145>0 or not)
 // 2.Using Modulus operator is used to find the remainder 
 // 3.sum=sum+remain / sum+=remain-In this the remainder get stored
-// 4.n=n/10- In this 247/10=24.7 this value goes in again to the loop and the same process repeated again.
+// 4.n=n/10- In this 145/10=14.5 this value goes in again to the loop and the same process repeated again.
 // Output is 10(1+4+5=10);
+
+
