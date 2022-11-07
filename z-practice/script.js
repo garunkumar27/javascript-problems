@@ -6,6 +6,7 @@
 // }
 // console.log(a);
 // console.log(b);
+// // output 5,12
 
 // var a;
 // let x;
@@ -15,6 +16,7 @@
 // }
 // console.log(a);
 // console.log(x);
+// // Output 10,15
 
 
 
@@ -24,6 +26,7 @@
 // }
 // console.log(a);
 // console.log(x);
+// Output:25
 
 // const y=12345; /only new variable can be given/
 // console.log(y);
@@ -36,8 +39,6 @@
 //     console.log("condition false");
 //    let z=10;
 //    console.log(z);
-
-
 // }
 // else{
 //     console.log("condition false");
@@ -588,7 +589,7 @@
 //}
 
 
-//Math Function for Random Colors using hexa
+// Math Function for Random Colors using hexa
 // function random(){ 
 
 // let color=0xFFFFFF;
@@ -610,6 +611,7 @@
 // 	console.log(colors);
 // }
 // randomcolor();
+// // setInterval(randomcolor,2000);
 
 
 
@@ -696,17 +698,6 @@
 // console.log("Age :"+age); 
 
 
-// let d=17,mon=09,yr=2022;
-// date=mon+"/"+d+"/"+yr;
-// console.log(date);
-// //let gn_date=new Date("09/17/2022"),
-// let gn_date=new Date(date);
-// console.log(gn_date);
-// day=gn_date.getDay(gn_date);
-// out=gn_date-((24*60*60*1000)*(day-1));
-// output=new Date.getTime(out);
-// console.log(getTime(out))
-
 // Generate/Print nearest largest number
 // function small(number){
 //     number=number.sort(function(a,b){return a-b})
@@ -731,33 +722,27 @@
 // }
 
 
-// // 1. Get time differences in hours between two dates
-// let date1=new Date(2022,09,12,10,00,22);
-// let date2=new Date();
-// // console.log(date2);
-// let old_time=date1.getTime();
-// // console.log(old_time);
-// let crnt_time=date2.getTime();
-// // console.log(crnt_time);
-// let total=crnt_time-old_time;
-// // console.log(total);
-// let hour=Math.floor(total/(60*60)),
-// positive=Math.abs(hour);
-// // console.log(positive);
-// let convert=(positive/(1000));
-// console.log(convert);
+// 1. Get time differences in hours between two dates
+// let date1=new Date(2022,09,14,10,00);
+// let date2=new Date(2022,09,14,08,00);
+// let total=date1-date2;
+// let hour=Math.abs(Math.floor(total/(1000*60*60)));
+// document.write(hour," hours");
 
 
 // 2.  Get the week start date
-// let d=30,mon=07,yr=2002;
+// fn_day-1 is given to subtract the date (i.e 6-1=5)
+// We need to get the output only as Monday.
+
+// let d=21,mon=07,yr=2002;
 // date=mon+"/"+d+"/"+yr;
-// console.log(date);
+// // console.log(date);
 // let gn_date=new Date(date);
-// console.log(gn_date);
+// // console.log(gn_date);
 // fn_day=gn_date.getDay(gn_date);
-// console.log(fn_day);
-// out=gn_date-((24*60*60*1000)*(day-1));
-// console.log(out);
+// // console.log(fn_day);
+// out=gn_date-((24*60*60*1000)*(fn_day-1));
+// // console.log(out);
 // output=new Date(out);
 // console.log(output);
 
