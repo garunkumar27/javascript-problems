@@ -354,18 +354,31 @@
 // })
 // console.log(a);
 
-// let str=prompt("Enter the Word"),check;
-// check=str.split("");
-// console.log(check);
-// check=check.reverse();
-// check=check.join("");
-// if(str==check){
-//     console.log("Given Word is Palindrome");
-// }
-// else{
-//     console.log("Given Word is not a Palindrome");
-// }
+/*  let str=prompt("Enter the Word"),check;
+ check=str.split("");
+ console.log(check);
+ check=check.reverse();
+ check=check.join("");
+ if(str==check){
+     console.log("Given Word is Palindrome");
+ }
+ else{
+     console.log("Given Word is not a Palindrome");
+ } */
 
+//Palindrome Logical
+/* let text=prompt("Enter the Text"),
+x="";
+for(i=text.length-1;i>=0;i--){
+	x+=text[i];
+	console.log(text.length);
+}
+if(x==text){
+	console.log("Palindrome");
+}
+else{
+	console.log("Not Palindrome");
+} */
 // Age Calculate
 // document.getElementById("trigger").addEventListener("click",calculate);
 // function calculate(){
@@ -774,4 +787,29 @@ console.log(fruits.includes("mango"));
 }
 createPyramid(8); */
 
-//Write a JavaScript program to add items in an blank array and display the items.
+//Array Swapping
+/* let arr1=[1,2,3,4,5],
+arr2=[6,7,8,9,10],arr3=[];
+arr3=arr1;
+//console.log(arr3);
+arr1=arr2;
+console.log(arr1);
+arr2=arr3
+console.log(arr2); */
+
+//Prime Number
+/* let i=parseInt(prompt("Enter the Number"));
+//for(i=2;i<=prime;i++){
+	if((i%2!==0)&&(i%3!==0)&&(i%5!==0)&&(i%7!==0)){
+		console.log("It is Prime Number",+i);
+	} 
+	 else if(i==2||i==3||i==5||i==7){
+		console.log("It is a Prime Number");
+	}  
+	else{
+		console.log("It is not a Prime number",+i)
+	}
+	
+//} */
+
+

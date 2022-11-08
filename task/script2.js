@@ -126,7 +126,7 @@ for(i=0;i<numbs;i++){
 console.log(st); */
 
 //Write a program to print Hollow Triangle Star Pattern
-let numb=6;hal="";
+/* let numb=6;hal="";
 for(i=1;i<=numb;i++){
 	for(j=0;j<i;j++){
 		if(i==numb){
@@ -144,4 +144,37 @@ for(i=1;i<=numb;i++){
 	hal+="\n";
 	
 }
-console.log(hal);
+console.log(hal); */
+
+/* for(i=di;i>1;i--){
+	for(j=di-i;j>0;j--){
+		diam+=" ";
+	}
+	for(k=2*i-1;k<0;k--){
+		diam+="*";
+	}
+	diam+="\n";
+} */
+
+//Diamond
+let di=5;diam="";
+for(i=1;i<di;i++){
+	for(j=0;j<di-i;j++){ 		
+		diam+=" ";
+	}
+	for(k=0;k<i*2-1;k++){
+		diam+="*";
+	}
+	diam+="\n";
+}
+//console.log(diam);
+for(i=0;i<di;i++){
+for(j=0;j<i;j++){
+	diam+=" ";
+}
+for(k=(di-i)*2-1;k>0;k--){
+	diam+="*";
+}
+diam+="\n";
+}
+console.log(diam);
