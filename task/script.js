@@ -813,3 +813,39 @@ console.log(arr2); */
 //} */
 
 
+let obj=[
+{
+	name:"Arun",
+	age:27,
+	role:"Front-end Developer",
+	
+},
+{
+
+	name:"Kumar",
+	age:23,
+	role:"Front-end Developer",	
+},
+{
+	
+	name:"Karthi",
+	age:24,
+	role:"Front-end Developer",
+}
+];
+let ans=[]
+let arr=["arun","Kartahi","Jenifer"];
+for(i of arr){
+	for(j=0;j<i.length;j++){
+		if(i[j]=="a"){
+			ans.push(i);
+			break;
+		}
+		
+	}
+}	
+console.log(ans);	
+let newArr=obj.filter((val)=>{return(val.age>=23)});
+let newArr1=obj.sort((a,b)=>(a.age - b.age))
+console.log(newArr);
+console.log(newArr1);	
