@@ -813,7 +813,7 @@ console.log(arr2); */
 //} */
 
 
-let obj=[
+/* let obj=[
 {
 	name:"Arun",
 	age:27,
@@ -848,4 +848,4 @@ console.log(ans);
 let newArr=obj.filter((val)=>{return(val.age>=23)});
 let newArr1=obj.sort((a,b)=>(a.age - b.age))
 console.log(newArr);
-console.log(newArr1);	
+console.log(newArr1);	 */

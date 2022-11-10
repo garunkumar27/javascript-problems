@@ -178,3 +178,24 @@ for(k=(di-i)*2-1;k>0;k--){
 diam+="\n";
 }
 console.log(diam);
+
+ let array=[80,15,75,22,-10,-100,2],arr=[];
+ for(i=0;i<array.length;i++){
+     for(j=0;j<array.length;j++){
+         if(array[i]<array[j]){
+             arr.push(array[j]);
+			 //console.log(arr);
+         }
+     }
+     number(arr);
+     arr=[];
+ }
+function number(arr){
+     arr=arr.sort(function(a,b){return a-b});
+     if(arr==""){
+         console.log("-1");
+     }
+         else{
+            console.log(arr[0]); 
+         }
+		 }
