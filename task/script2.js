@@ -199,3 +199,7 @@ function number(arr){
             console.log(arr[0]); 
          }
 		 }
+let newArr=obj.filter((val)=>{return(val.age>=23)});
+let newArr1=obj.sort((a,b)=>(a.age - b.age))
+console.log(newArr);
+console.log(newArr1);	 
