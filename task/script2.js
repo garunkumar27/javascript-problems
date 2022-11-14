@@ -4,13 +4,13 @@ function reset(inp){
 	inp.value="";
 }
 function adding(){
-    let input=document.getElementById("inpt"),
+	let input=document.getElementById("inpt"),
 	display=document.getElementById("list"),
-    inptEle=input.value;
-    //let array=[];
+	inptEle=input.value;
+	//let array=[];
 	//array and loop is necessary only when we store value in arrays and later we display it using display button.
-    //array.push(inptEle);
-    //console.log(array);
+	//array.push(inptEle);
+	//console.log(array);
 	for(i=0;i<array.length;i++){
 		let list=document.createElement("li");
 		list.innerHTML=array[i];
@@ -32,7 +32,7 @@ for(i=0;i<numb.length;i++){
 }
 else
 	//console.log(numb[i]);
-    arr.push(numb[i])
+	arr.push(numb[i])
 //console.log(arr);
 }
 arr=arr.join("");
@@ -157,7 +157,7 @@ console.log(hal); */
 } */
 
 //Diamond
-let di=5;diam="";
+/* let di=5;diam="";
 for(i=1;i<di;i++){
 	for(j=0;j<di-i;j++){ 		
 		diam+=" ";
@@ -177,29 +177,88 @@ for(k=(di-i)*2-1;k>0;k--){
 }
 diam+="\n";
 }
-console.log(diam);
+console.log(diam); */
 
- let array=[80,15,75,22,-10,-100,2],arr=[];
- for(i=0;i<array.length;i++){
-     for(j=0;j<array.length;j++){
-         if(array[i]<array[j]){
-             arr.push(array[j]);
-			 //console.log(arr);
-         }
-     }
-     number(arr);
-     arr=[];
- }
+/* let array=[80,15,75,22,-10,-100,2],arr=[];
+for(i=0;i<array.length;i++){
+	for(j=0;j<array.length;j++){
+		if(array[i]<array[j]){
+			arr.push(array[j]);
+			//console.log(arr);
+		}
+	}
+	number(arr);
+	arr=[];
+}
 function number(arr){
-     arr=arr.sort(function(a,b){return a-b});
-     if(arr==""){
-         console.log("-1");
-     }
-         else{
-            console.log(arr[0]); 
-         }
-		 }
+	arr=arr.sort(function(a,b){return a-b});
+	if(arr==""){
+		console.log("-1");
+	}
+		else{
+		   console.log(arr[0]); 
+		}
+		}
 let newArr=obj.filter((val)=>{return(val.age>=23)});
 let newArr1=obj.sort((a,b)=>(a.age - b.age))
 console.log(newArr);
-console.log(newArr1);	 
+console.log(newArr1);	 */
+
+
+//Printing 9 Divisible number in the ascending order of 'a' number
+/*  let range=200,rem,remain,a=[],sum,total,tot,ab=0;
+ for(i=0;i<=range;i++){
+	  if(i%9==0){
+			a.push(i);
+	  }
+	  // console.log(a);
+ }
+ for(i=0;i<a.length;i++){
+			rem=a[i]%10;
+			remain=parseInt(a[i]/10);
+			 //console.log(rem,remain);
+			if(rem>remain){
+				console.log(a[i]);
+	
+			}
+			if(a[i]>100){
+				sum=a[i]-100;
+				total=sum%10;
+				tot=parseInt(sum/10);
+				if(tot<total){
+					console.log(a[i]);
+				}
+			}
+ } */
+
+//  let rang=1000,res=[],strn;
+//  for(i=1;i<=rang;i++){
+
+// 	 if(i%9==0){
+// 		 strn=i.toString();
+// 		 if(strn.length<=2){
+// 			 if(parseInt(strn[0]) < parseInt(strn[1])){
+// 				 if((parseInt(strn[0])+parseInt(strn[1]))==9){
+// 				 res.push(i);	 
+// 			 }
+// 			 }else if(i<10){
+// 				 res.push(i);
+// 			 }
+
+
+// 		 }
+// 		 else {
+// 			 if(parseInt(strn[0]) < parseInt(strn[1]) && 
+// 			 parseInt(strn[1])< parseInt(strn[2])){
+// 				 if(parseInt(strn[0])+parseInt(strn[1])+parseInt(strn[2])==9){
+// 					 res.push(i)
+// 				 }
+// 			 }
+// 		 }
+
+// 	 }
+
+
+//  }
+//  console.log(res)
+
