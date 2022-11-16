@@ -52,12 +52,12 @@ for(i=0;i<array.length;i++){
 }  
  */
 //Duplicates value of array and also how many times it get repeated
-/* let values=[1,1,2,5,2,4,5,6,8,7,8,9,1],object={};
+let values=[1,1,2,5,2,4,5,6,8,7,8,9,1],object={};
 values.forEach((numb)=>{
 	object[numb]=(object[numb]||0)+1;
 })
 console.log(object);
- */
+ 
 //Using Star pattern print Hallow Square
 /* let val="",num=5;
 for(i=0;i<num;i++){
@@ -262,3 +262,42 @@ console.log(newArr1);	 */
 //  }
 //  console.log(res)
 
+//Aeroplane Seat Number
+/* let rang=parseInt(prompt("Enter the Seat Range"));
+for(i=1;i<=rang;i++){
+if((i%4==0)||(i%4==1)){
+	console.log(i+" Window Seats")
+}
+else{
+	console.log(i+" is not a Window Street");
+}
+} */
+
+let arr=[2,2,1,3,3],new=[];
+//debugger
+for(i=0;i<arr.length;i++){
+	for(j=i+1;j<arr.length;j++){
+		if(arr[i]==arr[j]){
+			console.log(arr[i]);
+			break;
+		}else{
+			new.push(arr[i]);
+		}
+	}
+}
+console.log(new);
+
+let val=[1,2,4,2,1,5,3,6,9,8,9,7],len=[],sum=0;
+for(i=0;i<val.length;i++){
+	if(!len.includes(val[i])){
+		len.push(val[i]);
+		console.log(len)
+	}
+	else{
+		sum++;
+	}
+	}
+for(i=0;i<sum;i++){
+	len.push(" _");
+}
+console.log(len);

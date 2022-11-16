@@ -798,8 +798,8 @@ arr2=arr3
 console.log(arr2); */
 
 //Prime Number
-/* let i=parseInt(prompt("Enter the Number"));
-//for(i=2;i<=prime;i++){
+let i=parseInt(prompt("Enter the Number"));
+for(i=2;i<=prime;i++){
 	if((i%2!==0)&&(i%3!==0)&&(i%5!==0)&&(i%7!==0)){
 		console.log("It is Prime Number",+i);
 	} 
@@ -810,8 +810,18 @@ console.log(arr2); */
 		console.log("It is not a Prime number",+i)
 	}
 	
-//} */
+} 
 
+let i=parseInt(prompt("Enter the Number"));
+if((i%2!==0)&&(i%3!==0)&&(i%5!==0)&&(i%7!==0)){
+	console.log("Hii")
+}
+else if(i==2||i==3||i==5||i==7){
+	console.log("It is a Prime Number")
+}
+else {
+	console.log("It is not a Prime Number")
+}
 
 /* let obj=[
 {
