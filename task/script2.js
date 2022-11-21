@@ -273,19 +273,20 @@ else{
 }
 } */
 
-let arr=[2,2,1,3,3],new=[];
+let arr=[2,2,1,3,3],newarr=[];
 //debugger
 for(i=0;i<arr.length;i++){
 	for(j=i+1;j<arr.length;j++){
+		debugger
 		if(arr[i]==arr[j]){
 			console.log(arr[i]);
 			break;
 		}else{
-			new.push(arr[i]);
+			newarr.push(arr[i]);
 		}
 	}
 }
-console.log(new);
+console.log(newarr);
 
 let val=[1,2,4,2,1,5,3,6,9,8,9,7],len=[],sum=0;
 for(i=0;i<val.length;i++){
@@ -301,3 +302,75 @@ for(i=0;i<sum;i++){
 	len.push(" _");
 }
 console.log(len);
+
+let obj={
+	name:"Arun",
+	age:22,
+	place:"Sivasailam"
+}
+
+for(i in obj){
+	console.log(obj[i]);
+	console.log(i);
+}
+
+let arr=[[1,2],[2,5],[5,9]];
+
+for(i=0;i<arr.length;i++){
+	for(j=0;j<arr[i].length;j++){
+		console.log(arr[i][j]);
+	}
+}
+for(let i of arr){
+	for(let val of i){
+		console.log(val);
+	}
+}
+
+let arr1=[1,2,4,5],arr2=[4,5,7,8],str="",st="",sum,b=[];
+for(i=arr1.length-1;i>=0;i--){
+	str+=arr1[i];
+	
+}
+for(i=arr2.length-1;i>=0;i--){
+	st+=arr2[i]
+}
+sum=(parseInt(str)+parseInt(st)).toString();
+console.log(sum);
+for(i=sum.length-1;i>=0;i--){
+	b.push(sum[i]);
+}
+console.log(b);
+
+let pali="cat dog dog cat"
+for(i=0;i<pali.length;i++){
+	if((pali[0]==pali[2])&&(pali[1]==pali[3])){
+		console.log("It is Palindrome");
+	}
+	else{
+		console.log("It is not a Palindrome")
+	}
+}
+/* let pa="mom",abc="";
+for(i=pa.length-1;i>=0;i--){
+	abc=abc+pa[i];
+	console.log(pa)
+}
+if(abc==pa){
+	console.log("Palindrome")
+}
+else{
+	console.log("Not")
+} */
+/* let pa="mom dad dad moms",abc="",ab="";
+for(i=pa.length;i>=0;i--){
+	abc=abc+pa[i];
+	
+}
+console.log(abc);
+if(abc==ab){
+	console.log("Palindrome");
+}
+else{
+	console.log("Not")
+} */
