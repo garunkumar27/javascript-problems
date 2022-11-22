@@ -186,18 +186,18 @@
 // let g=num(a,b);
 // console.log(g);
 
-// let u = [];
-// let s = 0, sum, avg, v;
-// v = parseInt(prompt('Number of terms'));
-// for (i = 0; i < v; i++) {
-//     u[i] = parseFloat(prompt('Enter the value'));
-//     sum = u[i] + s;
-//     s = sum;
-// }
-// console.log(u);
-// console.log(s);
-// avg = sum / v;
-// console.log(avg);
+/*  let u = [];
+ let s = 0, sum, avg, v;
+v = parseInt(prompt('Number of terms'));
+ for (i = 0; i < v; i++) {
+     u[i] = parseFloat(prompt('Enter the value'));
+     sum = u[i] + s;
+     s = sum;
+ }
+ console.log(u);
+ console.log(s);
+ avg = sum / v;
+console.log(avg); */
 
 
 // If Clause
@@ -336,7 +336,7 @@
 
 //	let x=parseInt(prompt("value"));
 //	switch(x){
-//		case (x<10): console.log("less thn 10");
+//		case (x<10): console.log("less than 10");
 //		break;
 //		case (x>10): console.log("Greater than 10");
 //		break;
@@ -672,16 +672,16 @@
 //     }
 
 // 1.Write a program to Check whether a date is a weekend date or not?
-// let date=new Date("09/11/2022"),
-// day=date.getDay(date);
-// console.log(day);
-// if(day=="0"||day=="6"){
-// 	console.log("Given Date is weekend");
-// }
-// else{
-// 	console.log("Given Date is not a weekend");
-// }
-
+/* let date=new Date("09/11/2022"),
+ day=date.getDay(date);
+ console.log(day);
+ if(day=="0"||day=="6"){
+ 	console.log("Given Date is weekend");
+ }
+ else{
+ 	console.log("Given Date is not a weekend");
+ }
+ */
 
 // 2.Write a program to calculate age using JS date
 // let dob = new Date("02/27/2000") ;
